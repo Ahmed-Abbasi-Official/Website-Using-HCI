@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HCI Assignment – Appointment, Form & Dose Submission</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            margin: 0;
+        }
+
+        header {
+            background: #2a4ddb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            background: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #2a4ddb;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #2a4ddb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>HCI UI Design Using Norman, GOMS & KLM</h1>
+    <p>Appointment Booking, Form Submission & Medicine Dose Input</p>
+</header>
+
+<!-- ================= MEDICINE DOSE INPUT ================= -->
+
+<section>
+    <h2>1. Medicine Dose Input UI</h2>
+    <p><strong>User Goal:</strong> Enter correct medicine dosage</p>
+
+    <label>Patient Name</label>
+    <input type="text" placeholder="Enter patient name">
+
+    <label>Dosage (ml/hr)</label>
+    <input type="text" placeholder="e.g. 12.5">
+
+    <button>Submit Dose</button>
+
+    <p><em>Feedback:</em> Dose submitted successfully.</p>
+</section>
+
+<section>
+    <h2>Norman’s 7 Stages – Dose Input</h2>
+    <ol>
+        <li><b>Goal:</b> Enter correct dose</li>
+        <li><b>Intention:</b> Use dose input form</li>
+        <li><b>Specify:</b> click input -> type -> submit </li>
+        <li><b>Execute:</b> User type name and value -> press submit</li>
+        <li><b>Perceive:</b> Confirmation message</li>
+        <li><b>Interpret:</b> Dose saved correctly</li>
+        <li><b>Evaluate:</b> Goal achieved</li>
+    </ol>
+</section>
+
+<section>
+    <h2>GOMS – Dose Input</h2>
+    <p><b>Goal:</b> Submit correct dosage</p>
+    <p><b>Operators:</b> Click, Type, Submit</p>
+    <p><b>Method:</b> Select field → type → submit</p>
+    <p><b>Selection Rule:</b> Keyboard preferred for expert users</p>
+</section>
+
+<section>
+    <h2>KLM – Dose Input</h2>
+    <table>
+        <tr><th>Step</th><th>Operator</th></tr>
+        <tr><td>Think dosage</td><td>M</td></tr>
+        <tr><td>Click dose field</td><td>P + B</td></tr>
+        <tr><td>Type 1</td><td>K</td></tr>
+        <tr><td>Type 2</td><td>K</td></tr>
+        <tr><td>Type .</td><td>K</td></tr>
+        <tr><td>Type 5</td><td>K</td></tr>
+        <tr><td>Click submit</td><td>P + B</td></tr>
+    </table>
+</section>
+
+<!-- ================= APPOINTMENT BOOKING ================= -->
+
+<section>
+    <h2>2. Appointment Booking UI</h2>
+    <p><strong>User Goal:</strong> Book an appointment successfully</p>
+
+    <label>Name</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Appointment Date</label>
+    <input type="date">
+
+    <label>Time Slot</label>
+    <select>
+        <option>Select Time</option>
+        <option>10:00 AM</option>
+        <option>12:00 PM</option>
+        <option>03:00 PM</option>
+    </select>
+
+    <button>Book Appointment</button>
+
+    <p><em>Feedback:</em> Appointment booked successfully.</p>
+</section>
+
+<section>
+    <h2>Norman’s 7 Stages – Appointment Booking</h2>
+    <ol>
+        <li><b>Goal:</b> Book appointment</li>
+        <li><b>Intention:</b> Select date and time</li>
+        <li><b>Specify:</b> Fill form</li>
+        <li><b>Execute:</b>slect time and date click -> Submit</li>
+        <li><b>Perceive:</b> Confirmation shown</li>
+        <li><b>Interpret:</b> Appointment booked</li>
+        <li><b>Evaluate:</b> Task complete</li>
+    </ol>
+</section>
+
+<section>
+    <h2>GOMS – Appointment Booking</h2>
+    <p><b>Goal:</b> Book appointment</p>
+    <p><b>Operators:</b> Click, Type, Select</p>
+    <p><b>Method:</b> Mouse → form → submit</p>
+    <p><b>Selection Rule:</b> Keyboard if expert</p>
+</section>
+
+<section>
+    <h2>KLM – Appointment Booking</h2>
+    <table>
+        <tr><th>Step</th><th>Operator</th></tr>
+        <tr><td>Decide date</td><td>M</td></tr>
+        <tr><td>Select date</td><td>P + B</td></tr>
+        <tr><td>Select time</td><td>P + B</td></tr>
+        <tr><td>Submit</td><td>P + B</td></tr>
+    </table>
+</section>
+
+<!-- ================= FORM SUBMISSION ================= -->
+
+<section>
+    <h2>3. Form Submission UI</h2>
+    <p><strong>User Goal:</strong> Submit personal information</p>
+
+    <label>Email</label>
+    <input type="email" placeholder="example@email.com">
+
+    <label>Password</label>
+    <input type="password" placeholder="Enter password">
+
+    <button>Submit Form</button>
+
+    <p><em>Feedback:</em> Form submitted successfully.</p>
+</section>
+
+<section>
+    <h2>Norman’s 7 Stages – Form Submission</h2>
+    <ol>
+        <li><b>Goal:</b> Submit form</li>
+        <li><b>Intention:</b> Enter data (emaol and pass)</li>
+        <li><b>Specify:</b> Click and type --> value </li>
+        <li><b>Execute:</b>enter email and pass click  -->  Submit</li>
+        <li><b>Perceive:</b> Success message</li>
+        <li><b>Interpret:</b> Data accepted</li>
+        <li><b>Evaluate:</b> Done</li>
+    </ol>
+</section>
+
+<section>
+    <h2>GOMS – Form Submission</h2>
+    <p><b>Goal:</b> Submit data</p>
+    <p><b>Operators:</b> Keystrokes, clicks</p>
+    <p><b>Method:</b> Type → submit</p>
+    <p><b>Selection Rule:</b> Keyboard preferred</p>
+</section>
+
+<section>
+    <h2>KLM – Form Submission</h2>
+    <table>
+        <tr><th>Step</th><th>Operator</th></tr>
+        <tr><td>Think info</td><td>M</td></tr>
+        <tr><td>Type email</td><td>K</td></tr>
+        <tr><td>Type password</td><td>K</td></tr>
+        <tr><td>Submit</td><td>P + B</td></tr>
+    </table>
+</section>
+
+<footer>
+    Designed to minimize Gulf of Execution & Evaluation using HCI models.
+</footer>
+
+</body>
+</html>
